@@ -48,8 +48,6 @@ func TestAuth(t *testing.T) {
 			t.Fatal("Didn't expect an error here but got one")
 		}
 
-		t.Fatal("Just failing")
-
 	}
 
 }
