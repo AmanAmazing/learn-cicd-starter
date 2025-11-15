@@ -18,6 +18,6 @@ jobs:
         with:
           go-version: "1.25.1"
 
-      - name: Force Failure
-        run: go version
+      - name: Running code tests
+        run: go test ./... 
   
