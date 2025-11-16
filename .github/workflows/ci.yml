@@ -37,6 +37,12 @@ jobs:
       
       - name: checking the formatting
         run: test -z $(go fmt ./...)
+      
+      - name: installing linter
+        run: go install honnef.co/go/tools/cmd/staticcheck@latest
+      
+      - name: running linter
+        run: staticcheck ./...
 
     
     
